@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tetris</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div>
+            <h1>HELP</h1>
+            <p>ESC: Exit</p>
+            <p>P: Pause</p>
+            <p>SPACE: Drop Figure</p>
+            <p>LEFT: Move Left</p>
+            <p>RIGHT: Move Right</p>
+            <p>UP: Rotate</p>
+            <p>DOWN: Move Down</p>
+            </div>
+        </div>
+        <div class="grid">  
+            <canvas id="board" class="game-board" ></canvas>    
+        </div>
+        <div class="right-column">
+            <div>
+                <h1>TETRIS</h1>
+                <p>Score: <span id="score">0</span></p>
+                <p>Lines: <span id="lines">0</span></p>
+                <p>Level: <span id="level">0</span></p>
+                <canvas id="next" class="next"></canvas>
+            </div>
+            <button onclick="play()" class="play-button">Play</button>
+        </div>
+    </div>
+  <script type="text/javascript" src="constants.js"></script>
+  <script type="text/javascript" src="board.js"></script>
+  <script type="text/javascript" src="piece.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+*{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid {
+    display: grid;
+  }
+  .container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 300px 300px 300px;
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }  
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .game-board {
+    border: solid 2px;
+    background-color: gray;
+  }
+  
+  .play-button {
+    background-color: #4e9c50;
+    font-size: 16px;
+    padding: 15px 30px;
+    cursor: pointer;
+  }
+
+  
